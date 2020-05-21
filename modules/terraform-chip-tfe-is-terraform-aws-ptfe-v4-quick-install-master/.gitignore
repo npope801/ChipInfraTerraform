@@ -1,0 +1,19 @@
+#  Local .terraform directories
+**/.terraform/*
+
+# .tfstate files
+*.tfstate
+*.tfstate.*
+
+# terraform config files
+*.terraformrc
+*terraformrc*
+
+# tfvars file
+terraform.tfvars
+
+# PTFE airgrap bundle
+*.airgap*
+
+# PTFE license files
+*.rli

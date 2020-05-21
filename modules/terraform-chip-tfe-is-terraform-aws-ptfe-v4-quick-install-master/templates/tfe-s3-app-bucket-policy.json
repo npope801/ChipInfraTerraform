@@ -1,0 +1,17 @@
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Sid": "",
+            "Effect": "Allow",
+            "Principal": {"AWS": ["${tfe_iam_role_arn}", "${current_iam_caller_id_arn}"]},
+            "Action": [
+                "s3:*"
+            ],
+            "Resource": [
+                "${tfe_s3_app_bucket_arn}",
+                "${tfe_s3_app_bucket_arn}/*"
+            ]
+        }
+    ]
+}
